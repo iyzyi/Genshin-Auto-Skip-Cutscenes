@@ -12,6 +12,6 @@
 
 ## 使用
 
-从下载脚本程序，并将`播放中.jpg`、`选项.jpg`放到脚本程序的所在目录下，最后以管理员权限运行。
+从[Releases](https://github.com/iyzyi/Genshin-Auto-Skip-Cutscenes/releases/)下载脚本程序，并将`播放中.jpg`、`选项.jpg`放到脚本程序的所在目录下，最后以管理员权限运行。
 
 F10开启自动跳过剧情的功能，F12关闭。
