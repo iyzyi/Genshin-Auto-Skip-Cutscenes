@@ -107,6 +107,27 @@ Stop()
 }
 
 
+BeginWalk()
+{
+	pid := WinActive("ahk_exe YuanShen.exe")
+	if (pid){
+		Send, {w down}
+		Send, {LShift down}
+		Sleep, 300
+		Send, {LShift up}
+	}
+}
+
+
+StopWalk()
+{
+	pid := WinActive("ahk_exe YuanShen.exe")
+	if (pid){
+		Send, {w up}
+	}
+}
+
+
 ; ***********¿ì½Ý¼ü***********
 
 F10::
@@ -115,4 +136,14 @@ Return
 
 F12::
 	Stop()
+Return
+
+NumpadAdd::
+XButton1::
+	BeginWalk()
+Return
+
+NumpadSub::
+XButton2::
+	StopWalk()
 Return
