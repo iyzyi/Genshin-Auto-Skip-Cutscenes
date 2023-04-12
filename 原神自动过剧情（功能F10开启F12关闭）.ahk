@@ -11,10 +11,10 @@ global YClickPos1	 := 720
 global YClickPos2	 := 800
 
 global ImageA 	:= "播放中.jpg"
-global X1	 	:= 74
+global X1	 	:= 44
 global Y1 		:= 27
-global X2 		:= 117
-global Y2 		:= 69
+global X2 		:= 100
+global Y2 		:= 72
 
 global ImageB 	:= "选项.jpg"
 global X3 		:= 1273
@@ -61,7 +61,7 @@ Run()
 			pid := WinActive("ahk_exe YuanShen.exe")
 			if (pid){
 			
-				ImageSearch, FoundX, FoundY, X1, Y1, X2, Y2, *64 %ImageA%
+				ImageSearch, FoundX, FoundY, X1, Y1, X2, Y2, *128 %ImageA%
 				
 				if (ErrorLevel = 2){
 					MsgBox 查找图像失败，请确保%ImageA%与本程序在同一目录下
