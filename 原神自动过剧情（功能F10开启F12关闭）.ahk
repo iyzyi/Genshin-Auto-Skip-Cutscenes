@@ -61,7 +61,7 @@ Run()
 			pid := WinActive("ahk_exe YuanShen.exe")
 			if (pid){
 			
-				ImageSearch, FoundX, FoundY, X1, Y1, X2, Y2, *128 %ImageA%
+				ImageSearch, FoundX, FoundY, X1, Y1, X2, Y2, *80 %ImageA%
 				
 				if (ErrorLevel = 2){
 					MsgBox 查找图像失败，请确保%ImageA%与本程序在同一目录下
